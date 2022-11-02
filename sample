@@ -1,0 +1,7 @@
+class sample
+{
+  public static voidmain(String[] args)
+  {
+    System.out.println("Hello java");
+   }
+}
