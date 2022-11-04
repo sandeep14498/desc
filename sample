@@ -1,7 +1,30 @@
-class sample
+class Overload
 {
-  public static voidmain(String[] args)
-  {
-    System.out.println("Hello java");
-   }
+	int length,breath;
+	public Overload()
+	{
+		length=0;
+		breath=00;
+	}
+	public Overload(int x,int y)
+	{
+		length=x;
+		breath=y;
+	}
+	public void area()
+	{
+		System.out.println("area is :"+(length*breath));
+	}
+	public void area(int x,int y)
+	{
+		System.out.println("area is :"+(x*y));
+	}
+	
+	public static void main(String[] args)
+	{
+		Overload ov = new Overload();
+		ov.area();
+		Overload ov1 =new Overload(10,10);
+		ov1.area(10,10);
+	}
 }
